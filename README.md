@@ -166,7 +166,7 @@ Updated the template to include an exam section (if authenticated):
 - "Start Exam" button.
 - Bootstrap styling for collapsible divs and responsive design.
 
-![Course Details File](onlinecourse/templates/course_detail_bootstrap.html)
+[Course Details File](onlinecourse/templates/course_detail_bootstrap.html)
 
 ### Task 4: Test Data
 Created sample data via admin site:
