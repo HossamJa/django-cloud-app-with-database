@@ -96,8 +96,8 @@ For reference, here's the Entity-Relationship (ER) diagram for the assessment fe
 
 1. **Clone the Repository**:
    ```
-   git clone https://your-repo-url.git
-   cd your-repo-name
+   git clone https://github.com/HossamJa/django-cloud-app-with-database
+   cd django-cloud-app-with-database
    ```
 
 2. **Set Up Virtual Environment**:
@@ -147,12 +147,12 @@ Created `Question`, `Choice`, and `Submission` models:
 - `Submission`: Many-to-One with Enrollment; Many-to-Many with Choice.
 Added a method `is_get_score` to `Question` for scoring logic.
 
-![Models File](onlinecourse/models.py)
+[Models File](onlinecourse/models.py)
 
 ### Task 2: Register Model Changes (admin.py)
 Imported and registered new models. Created inline classes (`QuestionInline`, `ChoiceInline`) for nested editing. Configured `QuestionAdmin` for admin-site management.
 
-![Admin File](onlinecourse/admin.py)
+[Admin File](onlinecourse/admin.py)
 
 **Log-in**
 ![Log-in Screenshot](screenshots/Log-in-panel.PNG)
@@ -191,8 +191,8 @@ Implemented function-based views:
 
 Updated `urls.py` with routes like `/<int:course_id>/submit/` and `/course/<int:course_id>/submission/<int:submission_id>/result/`.
 
-![Views File](onlinecourse/views.py)
-![URLs File](onlinecourse/urls.py)
+- [Views File](onlinecourse/views.py)
+- [URLs File](onlinecourse/urls.py)
 
 ### Task 6: Complete the Exam Result Template (exam_result_bootstrap.html)
 Created template for results:
